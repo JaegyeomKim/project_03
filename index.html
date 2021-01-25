@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+      <form name="mainFrom" onsubmit="return false">
+
+    <fieldset id="custInfo">
+      <legend>Customer Information</legend>
+
+      <label for="custname"> Name:</label>
+      <input name="custname" id="custname" placeholder="last name" type="text" />
+
+      <label for="city">City:</label>
+      <input name="city" id="city" value="Bellevue" type="text" />
+
+      <label for="paymenttype">Payment Perference</label>
+      <select name="paymenttype" id="paymenttype" size="1">
+        <option value="Cash" selected="selected">Cash</option>
+        <option value="VISA or MC"> VISA or MC</option>
+        <option value="Debit"> Debit</option>
+      </select>
+    
+
+      <input type="submit" id = "submit" value="Submit">
+
+    </fieldset>
+    
+    <fieldset id="mycus">
+      <h3>My Customers</h3>
+      <div id = "js-arrayList">
+        <!--Create Ul-->
+      </div>
+
+    </fieldset>
+    <script src="script.js"></script>
+    </form>
+  </body>
+</html>
